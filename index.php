@@ -14,7 +14,7 @@
 
     <div class="p-3 table-responisve">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Registrar
         </button>
 
@@ -39,10 +39,9 @@
         <table class="table table-hover table-striped">
             <thead class="table-dark text-white">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Foto</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
