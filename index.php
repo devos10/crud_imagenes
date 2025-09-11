@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -42,6 +42,10 @@
             </div>
         </div>
         <table class="table table-hover table-striped">
+            <?php
+                require "model/conexion.php";
+                $sql=$conexion->query("SELECT * FROM imagenes");
+            ?>
             <thead class="table-dark text-white">
                 <tr>
                     <th scope="col">ID</th>
@@ -50,14 +54,17 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    while($datos=$sql->fetch_object()){?>  
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <th scope="row"><?= $datos->id_imagen?></th>
+                    <td>--</td>
                     <td>
                         <a href="" class="btn btn-warning">Editar</a>
                         <a href="" class="btn btn-danger">Eliminar</a>                        
                     </td>
                 </tr>
+                <?php }?>
             </tbody>
         </table>
     </div>
