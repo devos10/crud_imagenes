@@ -52,7 +52,9 @@
                     while($datos=$sql->fetch_object()){?>  
                 <tr>
                     <th scope="row"><?= $datos->id_imagen?></th>
-                    <td>--</td>
+                    <td>
+                        <img width="80" src="<?php $datos->foto?>" alt="">
+                    </td>
                     <td>
                         <a href="" class="btn btn-warning">Editar</a>
                         <a href="" class="btn btn-danger">Eliminar</a>                        
