@@ -71,8 +71,8 @@
                     </div>
                     <div class="modal-body">
                         <form action="" enctype="multipart/form-data" method="POST">
-                            <input type="text" value="<?=$datos->id_imagen?>">
-
+                            <input type="text" value="<?=$datos->id_imagen?>" readonly>
+                            <input type="text" value="<?=$datos->foto?>" readonly>
                             <input type="file" class="form-control" name="imagen">
                             <input type="submit" value="Modificar" name="btnEditar" class="form-control btn btn-success">
                         </form>
