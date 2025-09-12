@@ -27,11 +27,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" enctype="multipart/form-data">
+                        <form action="" enctype="multipart/form-data" method="POST">
                             <input type="file" class="form-control" name="imagen">
                             <input type="submit" value="Registrar" name="btnRegistrar" class="form-control btn btn-success">
-
-
                         </form>
                     </div>            
                 </div>
