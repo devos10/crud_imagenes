@@ -11,7 +11,11 @@
 <body>
 
     <h1 class="text-center text-secondary fw-bold p-4">CRUD DE IMAGENES EN PHP Y MYSQL</h1>
-
+     <?php
+            require "model/conexion.php";
+            require "controller/registrar.php";
+            $sql=$conexion->query("SELECT * FROM imagenes");
+            ?>
     <div class="p-3 table-responisve">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -36,10 +40,6 @@
             </div>
         </div>
         <table class="table table-hover table-striped">
-            <?php
-                require "model/conexion.php";
-                $sql=$conexion->query("SELECT * FROM imagenes");
-            ?>
             <thead class="table-dark text-white">
                 <tr>
                     <th scope="col">ID</th>
