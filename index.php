@@ -74,7 +74,7 @@
                             <input type="text" value="<?=$datos->id_imagen?>">
 
                             <input type="file" class="form-control" name="imagen">
-                            <input type="submit" value="Registrar" name="btnRegistrar" class="form-control btn btn-success">
+                            <input type="submit" value="Modificar" name="btnEditar" class="form-control btn btn-success">
                         </form>
                     </div>            
                 </div>
