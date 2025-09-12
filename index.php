@@ -56,10 +56,30 @@
                         <img width="80" src="<?= $datos->foto?>" alt="">
                     </td>
                     <td>
-                        <a href="" class="btn btn-warning">Editar</a>
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModalEditar<?=$datos->id_imagen?>" class="btn btn-warning">Editar</a>
                         <a href="" class="btn btn-danger">Eliminar</a>                        
                     </td>
                 </tr>
+
+                        <!-- Modal para actualizar -->
+        <div class="modal fade" id="exampleModalEditar<?=$datos->id_imagen?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Registro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" enctype="multipart/form-data" method="POST">
+                            <input type="text" value="<?=$datos->id_imagen?>">
+
+                            <input type="file" class="form-control" name="imagen">
+                            <input type="submit" value="Registrar" name="btnRegistrar" class="form-control btn btn-success">
+                        </form>
+                    </div>            
+                </div>
+            </div>
+        </div>
                 <?php }?>
             </tbody>
         </table>
