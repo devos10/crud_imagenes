@@ -1,3 +1,4 @@
+En esta rama podras encontrar el proyecto finalizado.
 # CRUD de Imágenes en PHP y MySQL
 
 Este proyecto consiste en el desarrollo de un **sistema CRUD (Create, Read, Update, Delete)** para la gestión de imágenes, utilizando **PHP** y **MySQL**.  
@@ -31,8 +32,8 @@ El sistema será útil para:
 
 - **Lenguaje backend:** PHP  
 - **Base de datos:** MySQL  
-- **Frontend:** HTML, CSS y un poco de JavaScript (para formularios y validaciones).  
-- **Servidor local recomendado:** XAMPP, LAMP o similar.  
+- **Frontend:** HTML, CSS BOOTSTRAP y un poco de JavaScript (para algunas validaciones).  
+- **Servidor local recomendado:** XAMPP.  
 
 ---
 
