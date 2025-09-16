@@ -18,6 +18,12 @@
             require "controller/eliminar.php";
             $sql=$conexion->query("SELECT * FROM imagenes");
             ?>
+    <script>
+        function eliminar(){
+            let res=confirm("Estas seguro de eliminar?")
+            return res;
+        }
+    </script>
     <div class="p-3 table-responisve">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
