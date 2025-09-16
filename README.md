@@ -1,3 +1,7 @@
+<div style="padding:10px; background-color:#fff3cd; border:1px solid #ffecb5; border-radius:5px;">
+  ⚠️ <strong>Proyecto Finalizado:</strong> El código se encuentra en la rama <code>desarrollo</code>.
+</div>
+
 # CRUD de Imágenes en PHP y MySQL
 
 Este proyecto consiste en el desarrollo de un **sistema CRUD (Create, Read, Update, Delete)** para la gestión de imágenes, utilizando **PHP** y **MySQL**.  
