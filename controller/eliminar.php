@@ -27,5 +27,5 @@
 ?>
       <script>
         //con este script lo que hacemos es que no salga la alerta de reenvio de formulario cuando recargamos la pagina
-        history.replaceState(null,"",location.href);
+        history.replaceState(null,null,location.pathname);
     </script>
