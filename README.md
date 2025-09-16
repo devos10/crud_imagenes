@@ -1,3 +1,4 @@
+En esta rama podras encontrar el proyecto finalizado.
 # CRUD de Imágenes en PHP y MySQL
 
 Este proyecto consiste en el desarrollo de un **sistema CRUD (Create, Read, Update, Delete)** para la gestión de imágenes, utilizando **PHP** y **MySQL**.  
