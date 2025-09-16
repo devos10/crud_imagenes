@@ -65,7 +65,7 @@
                     </td>
                     <td>
                         <a data-bs-toggle="modal" data-bs-target="#exampleModalEditar<?=$datos->id_imagen?>" class="btn btn-warning">Editar</a>
-                        <a href="index.php?id=<?=$datos->id_imagen?>&nombre=<?=$datos->foto?>" class="btn btn-danger">Eliminar</a>
+                        <a href="index.php?id=<?=$datos->id_imagen?>&nombre=<?=$datos->foto?>" class="btn btn-danger" onclick="return eliminar();">Eliminar</a>
                     </td>
                 </tr>
 
