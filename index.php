@@ -11,7 +11,11 @@
 <body>
 
     <h1 class="text-center text-secondary fw-bold p-4">CRUD DE IMAGENES EN PHP Y MYSQL</h1>
-
+     <?php
+            require "model/conexion.php";
+            require "controller/registrar.php";
+            $sql=$conexion->query("SELECT * FROM imagenes");
+            ?>
     <div class="p-3 table-responisve">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -27,11 +31,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" enctype="multipart/form-data">
+                        <form action="" enctype="multipart/form-data" method="POST">
                             <input type="file" class="form-control" name="imagen">
                             <input type="submit" value="Registrar" name="btnRegistrar" class="form-control btn btn-success">
-
-
                         </form>
                     </div>
         <div class="modal-footer">
@@ -42,10 +44,6 @@
             </div>
         </div>
         <table class="table table-hover table-striped">
-            <?php
-                require "model/conexion.php";
-                $sql=$conexion->query("SELECT * FROM imagenes");
-            ?>
             <thead class="table-dark text-white">
                 <tr>
                     <th scope="col">ID</th>
@@ -58,7 +56,9 @@
                     while($datos=$sql->fetch_object()){?>  
                 <tr>
                     <th scope="row"><?= $datos->id_imagen?></th>
-                    <td>--</td>
+                    <td>
+                        <img width="80" src="<?= $datos->foto?>" alt="">
+                    </td>
                     <td>
                         <a href="" class="btn btn-warning">Editar</a>
                         <a href="" class="btn btn-danger">Eliminar</a>                        
